@@ -1,0 +1,37 @@
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 640px; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.video-container video {
+  width: 100%;
+  display: block;
+}
+
+.video-container .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.video-container .play-button svg {
+  width: 80px; /* Ajusta el tamaño del icono de reproducción según tu diseño */
+  height: 80px;
+}
+
+.video-container .play-button svg path {
+  fill: #ffffff; /* Color del icono de reproducción */
+}
+
+.video-container video::-webkit-media-controls-enclosure {
+  overflow: hidden;
+}
+
+.video-container video::-webkit-media-controls-panel {
+  width: calc(100% + 30px);
+}
